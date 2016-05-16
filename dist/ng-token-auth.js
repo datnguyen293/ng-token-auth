@@ -30,7 +30,7 @@ angular.module('ng-token-auth', ['ipCookie']).provider('$auth', function() {
       storage: 'cookies',
       forceValidateToken: false,
       tokenFormat: {
-        "access-token": "{{ token }}",
+        "login_token": "{{ token }}",
         "token-type": "Bearer",
         client: "{{ clientId }}",
         expiry: "{{ expiry }}",
